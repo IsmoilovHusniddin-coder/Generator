@@ -1,0 +1,80 @@
+.consultation-section {
+  background-image: url(../../images/consultation-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 118px 0 90px;
+}
+
+.consultation {
+  @include Display($space: end);
+  &__content-wrapper {
+    width: 607px;
+    padding: 20px 0 40px;
+    border-radius: 15px;
+    background-color: var(--clr-blue);
+    // height: 479px;
+    &__title {
+      font-weight: 700;
+      font-size: 40px;
+      line-height: 100%;
+      letter-spacing: 0%;
+      text-align: center;
+      color: var(--clr-fff);
+    }
+    &__content {
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 100%;
+      letter-spacing: 0%;
+      text-align: center;
+      color: var(--clr-fff);
+      opacity: 80%;
+    }
+    &__input {
+      padding: 19px 25px;
+      width: 80%;
+      margin: 12px 10%;
+      outline: none;
+      background-color: var(--clr-5871ff);
+      border: 2.5px solid var(--clr-5871ff);
+      transition: all 0.3s;
+      border-radius: 8px;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 100%;
+      letter-spacing: 0%;
+      color: var(--clr-fff);
+    }
+    &__input::placeholder {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 100%;
+      letter-spacing: 0%;
+      color: var(--clr-fff);
+    }
+    &__input:active {
+      border-bottom: 2.5px solid var(--clr-000);
+    }
+
+    &__btn {
+      @include Display($space: center);
+      gap: 6px;
+      width: 80%;
+      margin: 0 10%;
+      padding: 22px 0;
+      color: var(--clr-blue);
+      background-color: var(--clr-fff);
+      border: 1.5px solid var(--clr-fff);
+      border-radius: 6px;
+      font-size: 18px;
+    }
+    &__btn:hover {
+      color: var(--clr-fff);
+      background-color: var(--clr-blue);
+    }
+    &__btn:active {
+      background-color: var(--clr-fff);
+      color: var(--clr-blue);
+    }
+  }
+}

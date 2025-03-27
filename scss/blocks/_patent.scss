@@ -1,0 +1,30 @@
+.patent {
+  &__content-wrapper {
+    margin: 0 auto;
+    width: 873px;
+    &__title {
+      font-weight: 700;
+      font-size: 48px;
+      line-height: 100%;
+      letter-spacing: 0%;
+      text-align: center;
+      text-transform: capitalize;
+      color: var(--clr-333);
+      &__span {
+        text-transform: lowercase;
+      }
+    }
+    &__content {
+      font-family: Helvetica Neue;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 100%;
+      letter-spacing: 0%;
+      text-align: center;
+      color: var(--clr-333);
+    }
+  }
+  &__images {
+    margin: 0 auto;
+  }
+}

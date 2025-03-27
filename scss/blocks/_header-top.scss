@@ -1,0 +1,39 @@
+.header-top {
+  @include Display($space: end);
+  gap: 20px;
+  padding: 26px 0;
+  border-bottom: 1px solid var(--clr-333-1A);
+  &__coment-1 {
+    @include Coment();
+  }
+  &__link {
+    @include Display($space: space-between);
+    gap: 8px;
+    color: var(--clr-333-b2);
+    &--svg {
+      opacity: 70%;
+    }
+    &--content {
+      @include Coment();
+    }
+  }
+  &__coment-2 {
+    @include Coment();
+  }
+  &__language {
+    @include Display($space: space-between);
+    gap: 5px;
+    border-left: 1px solid var(--clr-333-1A);
+    padding-left: 9px;
+    height: 50px;
+    &__img-1 {
+      color: var(--clr-gray);
+    }
+    &__coment {
+      @include Coment-1();
+    }
+    &__img-2 {
+      color: var(--clr-black);
+    }
+  }
+}

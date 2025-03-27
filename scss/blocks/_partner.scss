@@ -1,0 +1,21 @@
+.partner-section{
+    padding: 67px 0 57px;
+}
+.partner {
+  @include Display($space: start);
+  flex-direction: column;
+  gap: 30px;
+  &__title {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+    color: var(--clr-333);
+  }
+  &__images-wrapper {
+    @include Display($space: space-between);
+    gap: 50px;
+    flex-wrap: wrap;
+  }
+}

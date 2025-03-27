@@ -1,0 +1,66 @@
+.catalog {
+  @include Display($space: start);
+  flex-direction: column;
+  gap: 46px;
+  &__title {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+    color: var(--clr-333);
+  }
+  &__menu-wrapper {
+    @include Display($space: space-between);
+    width: 100%;
+    gap: 26px;
+    margin-bottom: 58px;
+    &__content-wrapper {
+      box-shadow: 0px 0px 6px 0px var(--clr-000-1a);
+      &__images {
+        margin: 7px;
+      }
+      &__content {
+        margin: 19px;
+        &__title {
+          font-weight: 500;
+          font-size: 20px;
+          line-height: 150%;
+          letter-spacing: 0%;
+          vertical-align: middle;
+          color: var(--clr-000);
+          opacity: 80%;
+          margin-bottom: 3px;
+        }
+        &__coment {
+          font-weight: 700;
+          font-size: 14px;
+          line-height: 20px;
+          letter-spacing: 0%;
+          color: var(--clr-333-cc);
+          opacity: 80%;
+          &__span {
+            font-family: Helvetica Neue;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 20px;
+            letter-spacing: 0%;
+            color: var(--clr-333-cc);
+            opacity: 60%;
+          }
+        }
+        &__btn {
+          @include Btn($padding: 9px 61px, $font-size: 18px);
+          @include Display($space: start);
+          margin-top: 14px;
+        }
+        &__btn:hover {
+          @include Btn-hover();
+        }
+        &__btn:active {
+          @include Btn-active();
+        }
+      }
+    }
+  }
+}

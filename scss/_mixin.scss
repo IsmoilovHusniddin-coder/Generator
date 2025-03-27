@@ -1,0 +1,64 @@
+@mixin Display($space) {
+  display: flex;
+  align-items: center;
+  justify-content: $space;
+}
+
+@mixin Coment() {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0px;
+  color: var(--clr-333-b2);
+  opacity: 70%;
+}
+
+@mixin Coment-1() {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 1.27px;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--clr-black);
+}
+
+@mixin Header-content($font-size, $text-trans) {
+  font-weight: 500;
+  font-size: $font-size;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: var(--clr-333);
+  text-transform: $text-trans;
+}
+
+@mixin Header-content-hover() {
+  color: var(--clr-green);
+  font-weight: 700;
+}
+
+@mixin Header-content-active() {
+  font-weight: 700;
+  color: var(--clr-red);
+}
+
+@mixin Btn($padding, $font-size) {
+  @include Display($space: start);
+  gap: 6px;
+  padding: $padding;
+  color: var(--clr-fff);
+  background-color: var(--clr-blue);
+  border: 1.5px solid var(--clr-blue);
+  border-radius: 6px;
+  font-size: $font-size;
+}
+
+@mixin Btn-hover() {
+  background-color: var(--clr-fff);
+  color: var(--clr-blue);
+}
+
+@mixin Btn-active() {
+  color: var(--clr-fff);
+  background-color: var(--clr-blue);
+}

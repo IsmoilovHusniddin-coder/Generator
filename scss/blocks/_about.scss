@@ -1,0 +1,39 @@
+.about-section {
+}
+
+.about {
+  @include Display($space: space-between);
+  padding: 68px 0 76px;
+  &__content-wrapper {
+    // display: flex;
+    // flex-direction: column;
+    width: 542px;
+    // gap: 16px;
+    &__title {
+      font-weight: 700;
+      font-size: 48px;
+      line-height: 100%;
+      letter-spacing: 0%;
+      color: var(--clr-333);
+    }
+    &__coment {
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 100%;
+      letter-spacing: 0%;
+      color: var(--clr-333);
+      opacity: 80%;
+      margin: 16px 0;
+    }
+    &__btn {
+      @include Btn($padding: 15px 48px, $font-size: 18px);
+      @include Display($space: end);
+    }
+    &__btn:hover {
+      @include Btn-hover();
+    }
+    &__btn:active {
+      @include Btn-active();
+    }
+  }
+}
