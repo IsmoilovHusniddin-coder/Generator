@@ -1,27 +1,25 @@
-.about-section {
-}
-
 .about {
   @include Display($space: space-between);
   padding: 68px 0 76px;
   &__content-wrapper {
-    // display: flex;
-    // flex-direction: column;
     width: 542px;
-    // gap: 16px;
     &__title {
-      font-weight: 700;
-      font-size: 48px;
-      line-height: 100%;
-      letter-spacing: 0%;
-      color: var(--clr-333);
+      @include TextStyle(
+        $fw: 700,
+        $fs: 48px,
+        $ln: 100%,
+        $ls: 0%,
+        $clr: var(--clr-333)
+      );
     }
     &__coment {
-      font-weight: 400;
-      font-size: 18px;
-      line-height: 100%;
-      letter-spacing: 0%;
-      color: var(--clr-333);
+      @include TextStyle(
+        $fw: 400,
+        $fs: 18px,
+        $ln: 100%,
+        $ls: 0%,
+        $clr: var(--clr-333)
+      );
       opacity: 80%;
       margin: 16px 0;
     }

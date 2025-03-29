@@ -30,7 +30,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Roboto";
+  font-family: "Roboto" sans-serif;
   list-style: none;
   text-decoration: none;
 }
@@ -305,6 +305,7 @@
   line-height: 100%;
   letter-spacing: 0%;
   color: var(--clr-333);
+  transition: all 0.3s;
 }
 .about__content-wrapper__coment {
   font-weight: 400;
@@ -312,6 +313,7 @@
   line-height: 100%;
   letter-spacing: 0%;
   color: var(--clr-333);
+  transition: all 0.3s;
   opacity: 80%;
   margin: 16px 0;
 }
@@ -351,8 +353,9 @@
   font-size: 48px;
   line-height: 100%;
   letter-spacing: 0%;
-  text-align: center;
   color: var(--clr-333);
+  transition: all 0.3s;
+  text-align: center;
 }
 .catalog__menu-wrapper {
   display: flex;
@@ -376,8 +379,9 @@
   font-size: 20px;
   line-height: 150%;
   letter-spacing: 0%;
-  vertical-align: middle;
   color: var(--clr-000);
+  transition: all 0.3s;
+  vertical-align: middle;
   opacity: 80%;
   margin-bottom: 3px;
 }
@@ -387,15 +391,16 @@
   line-height: 20px;
   letter-spacing: 0%;
   color: var(--clr-333-cc);
+  transition: all 0.3s;
   opacity: 80%;
 }
 .catalog__menu-wrapper__content-wrapper__content__coment__span {
-  font-family: Helvetica Neue;
   font-weight: 500;
   font-size: 14px;
   line-height: 20px;
   letter-spacing: 0%;
   color: var(--clr-333-cc);
+  transition: all 0.3s;
   opacity: 60%;
 }
 .catalog__menu-wrapper__content-wrapper__content__btn {
@@ -502,16 +507,18 @@
   font-size: 40px;
   line-height: 100%;
   letter-spacing: 0%;
-  text-align: center;
   color: var(--clr-fff);
+  transition: all 0.3s;
+  text-align: center;
 }
 .consultation__content-wrapper__content {
   font-weight: 400;
   font-size: 18px;
   line-height: 100%;
   letter-spacing: 0%;
-  text-align: center;
   color: var(--clr-fff);
+  transition: all 0.3s;
+  text-align: center;
   opacity: 80%;
 }
 .consultation__content-wrapper__input {

@@ -14,20 +14,24 @@
     background-color: var(--clr-blue);
     // height: 479px;
     &__title {
-      font-weight: 700;
-      font-size: 40px;
-      line-height: 100%;
-      letter-spacing: 0%;
+      @include TextStyle(
+        $fw: 700,
+        $fs: 40px,
+        $ln: 100%,
+        $ls: 0%,
+        $clr: var(--clr-fff)
+      );
       text-align: center;
-      color: var(--clr-fff);
     }
     &__content {
-      font-weight: 400;
-      font-size: 18px;
-      line-height: 100%;
-      letter-spacing: 0%;
+      @include TextStyle(
+        $fw: 400,
+        $fs: 18px,
+        $ln: 100%,
+        $ls: 0%,
+        $clr: var(--clr-fff)
+      );
       text-align: center;
-      color: var(--clr-fff);
       opacity: 80%;
     }
     &__input {

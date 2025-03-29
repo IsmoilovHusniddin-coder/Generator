@@ -62,3 +62,12 @@
   color: var(--clr-fff);
   background-color: var(--clr-blue);
 }
+
+@mixin TextStyle($fw, $fs, $ln, $ls, $clr) {
+  font-weight: $fw;
+  font-size: $fs;
+  line-height: $ln;
+  letter-spacing: $ls;
+  color: $clr;
+  transition: all 0.3s;
+}
