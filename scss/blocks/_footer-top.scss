@@ -12,51 +12,81 @@
     @include Display($space: start);
     gap: 6px;
     &__coment {
-      font-weight: 500;
-      font-size: 20px;
-      line-height: 100%;
-      letter-spacing: 0%;
-      color: var(--clr-fff);
+      @include TextStyle(
+        $fw: 500,
+        $fs: 20px,
+        $ln: 100%,
+        $ls: 0%,
+        $clr: var(--clr-fff)
+      );
     }
   }
   &__content-wrapper {
     width: 260px;
     &__title {
-      font-weight: 700;
-      font-size: 20px;
-      line-height: 100%;
-      letter-spacing: 0px;
-      color: var(--clr-fff);
+      @include TextStyle(
+        $fw: 700,
+        $fs: 20px,
+        $ln: 100%,
+        $ls: 0%,
+        $clr: var(--clr-fff)
+      );
     }
     &__coment {
-      font-weight: 400;
-      font-size: 16px;
-      line-height: 100%;
-      letter-spacing: 0px;
-      color: var(--clr-fff);
+      @include TextStyle(
+        $fw: 400,
+        $fs: 16px,
+        $ln: 100%,
+        $ls: 0%,
+        $clr: var(--clr-fff)
+      );
       margin: 5px 0;
+      &:hover {
+        @include TextStyle(
+          $fw: 400,
+          $fs: 16px,
+          $ln: 100%,
+          $ls: 0%,
+          $clr: var(--clr-blue)
+        );
+      }
     }
     &__title-2 {
-      font-weight: 700;
-      font-size: 16px;
-      line-height: 100%;
-      letter-spacing: 0px;
-      color: var(--clr-fff);
+      @include TextStyle(
+        $fw: 700,
+        $fs: 16px,
+        $ln: 100%,
+        $ls: 0%,
+        $clr: var(--clr-fff)
+      );
     }
     &__title-3 {
-      font-weight: 700;
-      font-size: 16px;
-      line-height: 100%;
-      letter-spacing: 0px;
-      color: var(--clr-fff);
+      @include TextStyle(
+        $fw: 700,
+        $fs: 16px,
+        $ln: 100%,
+        $ls: 0%,
+        $clr: var(--clr-fff)
+      );
     }
     &__link {
-      font-weight: 400;
-      font-size: 16px;
-      line-height: 100%;
-      letter-spacing: 0px;
-      color: var(--clr-fff);
+      @include TextStyle(
+        $fw: 400,
+        $fs: 16px,
+        $ln: 100%,
+        $ls: 0%,
+        $clr: var(--clr-fff)
+      );
       margin: 5px 0;
+      &:hover {
+        @include TextStyle(
+          $fw: 400,
+          $fs: 16px,
+          $ln: 100%,
+          $ls: 0%,
+          $clr: var(--clr-blue)
+        );
+      }
     }
     &__input {
       padding: 19px 11px 18px 12px;
@@ -65,30 +95,40 @@
       background-color: var(--clr-footer-bc);
       border: 1.5px solid var(--clr-fff);
       border-radius: 8px;
-      font-weight: 400;
-      font-size: 16px;
-      line-height: 100%;
-      letter-spacing: 0%;
-      color: var(--clr-fff);
+      @include TextStyle(
+        $fw: 400,
+        $fs: 16px,
+        $ln: 100%,
+        $ls: 0%,
+        $clr: var(--clr-fff)
+      );
       margin-bottom: 20px;
+      &:focus {
+        border: 1.5px solid var(--clr-blue);
+      }
     }
     &__input::placeholder {
-      font-weight: 400;
-      font-size: 16px;
-      line-height: 100%;
-      letter-spacing: 0%;
-      color: var(--clr-fff);
+      @include TextStyle(
+        $fw: 400,
+        $fs: 16px,
+        $ln: 100%,
+        $ls: 0%,
+        $clr: var(--clr-fff)
+      );
     }
     &__btn {
       background-color: var(--clr-303);
       padding: 17px 73px;
       border: 1.5px solid var(--clr-fff);
       border-radius: 8px;
-      color: var(--clr-fff);
-      font-weight: 700;
-      font-size: 18px;
-      line-height: 100%;
-      letter-spacing: 0%;
+      @include TextStyle(
+        $fw: 700,
+        $fs: 18px,
+        $ln: 100%,
+        $ls: 0%,
+        $clr: var(--clr-fff)
+      );
+
       text-align: center;
     }
     &__btn:hover {

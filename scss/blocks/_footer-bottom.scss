@@ -1,10 +1,12 @@
 .foter-bottom {
   &__coment {
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 24px;
-    letter-spacing: 0%;
-    color: var(--clr-D9DBE1);
+    @include TextStyle(
+      $fw: 400,
+      $fs: 12px,
+      $ln: 24px,
+      $ls: 0%,
+      $clr: var(--clr-D9DBE1)
+    );
     margin-top: 18px;
   }
 }

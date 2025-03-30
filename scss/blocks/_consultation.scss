@@ -41,20 +41,23 @@
       outline: none;
       background-color: var(--clr-5871ff);
       border: 2.5px solid var(--clr-5871ff);
-      transition: all 0.3s;
+      @include TextStyle(
+        $fw: 400,
+        $fs: 16px,
+        $ln: 100%,
+        $ls: 0%,
+        $clr: var(--clr-fff)
+      );
       border-radius: 8px;
-      font-weight: 400;
-      font-size: 16px;
-      line-height: 100%;
-      letter-spacing: 0%;
-      color: var(--clr-fff);
     }
     &__input::placeholder {
-      font-weight: 400;
-      font-size: 16px;
-      line-height: 100%;
-      letter-spacing: 0%;
-      color: var(--clr-fff);
+      @include TextStyle(
+        $fw: 400,
+        $fs: 16px,
+        $ln: 100%,
+        $ls: 0%,
+        $clr: var(--clr-fff)
+      );
     }
     &__input:active {
       border-bottom: 2.5px solid var(--clr-000);

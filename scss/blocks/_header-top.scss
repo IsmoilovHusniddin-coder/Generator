@@ -24,16 +24,63 @@
     @include Display($space: space-between);
     gap: 5px;
     border-left: 1px solid var(--clr-333-1A);
-    padding-left: 9px;
-    height: 50px;
-    &__img-1 {
-      color: var(--clr-gray);
-    }
+    padding: 14px 11px;
+    position: relative;
+    cursor: pointer;
     &__coment {
       @include Coment-1();
     }
     &__img-2 {
       color: var(--clr-black);
     }
+    &:hover {
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+      background-color: var(--clr-blue);
+      color: var(--clr-fff);
+      transition: all 0.3s;
+      border: none;
+      &__img-1 {
+        color: var(--clr-fff);
+      }
+      // &__popap {
+      //   height: 86.8px;
+      //   padding: 5px;
+      // }
+    }
+    &__popap {
+      position: absolute;
+      top: 48px;
+      width: 100%;
+      left: 0;
+      background-color: var(--clr-blue);
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
+      padding: 5px;
+      overflow: hidden;
+      & > li {
+        text-align: center;
+        padding: 10px;
+        color: var(--clr-fff);
+        &:hover {
+          background-color: var(--clr-fff);
+          color: var(--clr-000);
+          border-radius: 10px;
+        }
+      }
+    }
   }
+}
+
+.header-top__language {
+  position: relative;
+}
+
+.header-top__language__popap {
+  position: absolute;
+  display: none;
+}
+
+.header-top__language:hover .header-top__language__popap {
+  display: block;
 }
